@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>AngaDS</title>
+
+</head>
+<body>
+    <section id="todo" class="container-fluid">
+        <h1>Uso de getElementsByTagName</h1>
+        <article>
+        <h3>Listado de bebidas</h3>
+      
+        <p>La bebida elegida es:</p>
+        <p id="resultado"></p>
+        </article>
+        <hr>
+        <article>
+            <h1>Ejercicio con getElementsByName</h1>
+            <p>Nombre: <input type="text" value="Angel" name="cajaInput"></p>
+            <p>Apellido: <input type="text" value="Servin" name="cajaInput"></p>
+            <p>Edad: <label name="cajaInput">18</label></p>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+        </article>
+
+        <article>
+            <h1>Ejercicio 1</h1>
+            <h3>Listado de bebidas</h3>
+            <ol>
+                <li name="lista1">Café $45</li>
+                <li name="lista1">Te $35</li>
+                <li name="lista1">Leche $20</li>
+                <li name="lista1">Malteada $60</li>
+                <li name="lista1">Jugo $25</li>
+            </ol>
+            <p>Que bebida desea? <input type="text" name="bebida" id="bebida"></p>
+            <p>Cuantas desea? <input type="text" name="cuantas" id="cuantas"></p>
+            <button id="btnbebidas" onclick="calcular()">calcular</button>
+                    
+            <p id="resultado2"></p>
+
+        </article>
+
+        <article>
+            <h1>Ejercicio 2</h1>
+            <h3>Tablas</h3>
+            <ol >
+            <table>
+            <tr>
+                <th>Tema</th>
+                <th>Imagen</th>
+                <th>Validado</th>
+            </tr>
+            <tr id="tema1">
+                <td><li name="listatemas">Codificar</li></td>
+                <td><img src="media/imagen1.jpg" class="images"></td>
+                <td><p>Sí</p><input type="radio" id="opcion1" name="opcion"></td>
+            </tr>
+            <tr id="tema2">
+                <td><li name="listatemas">Diseñar</li></td>
+                <td><img src="media/imagen2.jpg" class="images"></td>
+                <td><p>Sí</p><input type="radio" id="opcion2" name="opcion"></td>
+            </tr>
+            <tr id="tema3">
+                <td><li name="listatemas">Configurar RRSS</li></td>
+                <td><img src="media/imagen3.jpg" class="images"></td>
+                <td><p>Sí</p><input type="radio" id="opcion3" name="opcion"></td>
+            </tr>
+        </table>
+        <ol>
+        <button id="btnbebidas" onclick="accion1()">Cuantas imagenes hay?</button>
+        <p id="resultado4"></p>
+        <p>Seleccionar tema <input type="text" name="temas" id="temas"></p>
+        <button id="btnbebidas" onclick="accion2()">Realizar</button>
+        <p id="resultado5"></p>
+        <button id="btnbebidas" onclick="accion3()">Mostrar las aun no validadas</button>
+        <p id="resultado6"></p>
+        <button id="btnbebidas" onclick="accion4()">Reestablecer todo</button>
+        </article>
+        <script src="js/procesos.js"></script>
+    </section>
+</body>
+</html>
